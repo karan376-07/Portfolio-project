@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jane Doe — Front-End Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Jane Doe, a front-end developer specializing in accessible, semantic web design. View projects, skills, and contact information.">
+  <link rel="canonical" href="https://example.com/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jane Doe — Front-End Developer Portfolio">
+  <meta property="og:description" content="Accessible, semantic, SEO-friendly portfolio website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/index.html">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Jane Doe</a></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Hi, I'm Jane Doe</h1>
+      <p>
+        I'm a front-end developer who builds fast, accessible, and
+        standards-compliant websites. I care about semantic HTML,
+        clean code, and making the web usable for everyone.
+      </p>
+      <p>
+        <a href="projects.html">View my work</a> or
+        <a href="contact.html">get in touch</a>.
+      </p>
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Projects</h2>
+      <ul class="project-list">
+        <li class="project-card">
+          <article>
+            <h3>Project One</h3>
+            <img
+              src="https://placehold.co/400x250"
+              alt="Screenshot of Project One dashboard showing a chart and navigation sidebar"
+              width="400" height="250" loading="lazy">
+            <p>A short description of what this project does and the tech used.</p>
+            <p><a href="projects.html#project1">View project details</a></p>
+          </article>
+        </li>
+        <li class="project-card">
+          <article>
+            <h3>Project Two</h3>
+            <img
+              src="https://placehold.co/400x250"
+              alt="Screenshot of Project Two landing page with hero section"
+              width="400" height="250" loading="lazy">
+            <p>A short description of what this project does and the tech used.</p>
+            <p><a href="projects.html#project2">View project details</a></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jane Doe. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:jane@example.com">jane@example.com</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

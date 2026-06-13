@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact Jane Doe — Front-End Developer</title>
+  <meta name="description" content="Get in touch with Jane Doe for freelance work, collaboration, or job opportunities using the accessible contact form below.">
+  <link rel="canonical" href="https://example.com/contact.html">
+
+  <meta property="og:title" content="Contact Jane Doe">
+  <meta property="og:description" content="Get in touch for freelance work or collaboration.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/contact.html">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Jane Doe</a></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Contact Me</h1>
+    <p>
+      Have a project in mind or a question? Fill out the form below and
+      I'll get back to you as soon as possible. Fields marked
+      <span class="required" aria-hidden="true">*</span>
+      <span class="visually-hidden">(required)</span> are required.
+    </p>
+
+    <div
+      id="form-success"
+      class="success-message"
+      role="status"
+      hidden>
+      Thanks! Your message has been sent successfully.
+    </div>
+
+    <form id="contact-form" novalidate>
+
+      <div class="form-field">
+        <label for="name">
+          Name <span class="required" aria-hidden="true">*</span>
+          <span class="visually-hidden">(required)</span>
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="name"
+          required
+          aria-required="true"
+          aria-describedby="name-error">
+        <span id="name-error" class="error-message" role="alert"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="email">
+          Email <span class="required" aria-hidden="true">*</span>
+          <span class="visually-hidden">(required)</span>
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+          aria-required="true"
+          aria-describedby="email-error">
+        <span id="email-error" class="error-message" role="alert"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          autocomplete="off">
+      </div>
+
+      <div class="form-field">
+        <label for="message">
+          Message <span class="required" aria-hidden="true">*</span>
+          <span class="visually-hidden">(required)</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          aria-required="true"
+          aria-describedby="message-error"></textarea>
+        <span id="message-error" class="error-message" role="alert"></span>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <section aria-labelledby="alt-contact-heading">
+      <h2 id="alt-contact-heading">Other Ways to Reach Me</h2>
+      <ul>
+        <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/">linkedin.com/in/janedoe</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jane Doe. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:jane@example.com">jane@example.com</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

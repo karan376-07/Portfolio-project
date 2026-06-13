@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About Jane Doe — Front-End Developer</title>
+  <meta name="description" content="Learn about Jane Doe's background, skills, and experience as a front-end developer focused on accessibility and semantic HTML.">
+  <link rel="canonical" href="https://example.com/about.html">
+
+  <meta property="og:title" content="About Jane Doe">
+  <meta property="og:description" content="Background, skills, and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/about.html">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Jane Doe</a></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article aria-labelledby="about-heading">
+      <h1 id="about-heading">About Me</h1>
+      <p>
+        I'm Jane Doe, a front-end developer with a passion for building
+        websites that work well for everyone — including people who use
+        screen readers, keyboard navigation, or assistive technology.
+        I focus on writing clean, semantic HTML and accessible interfaces.
+      </p>
+      <p>
+        Outside of coding, I enjoy contributing to open-source accessibility
+        tools and writing about web standards.
+      </p>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul>
+          <li>Semantic HTML5 &amp; ARIA</li>
+          <li>CSS3 (Flexbox, Grid, responsive design)</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Accessibility auditing (Lighthouse, axe)</li>
+          <li>Version control with Git</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <ul>
+          <li>
+            <h3>Front-End Developer — Example Co. (2023–Present)</h3>
+            <p>Built and maintained accessible UI components for a SaaS dashboard.</p>
+          </li>
+          <li>
+            <h3>Junior Developer — Sample Studio (2021–2023)</h3>
+            <p>Developed marketing websites with a focus on performance and SEO.</p>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jane Doe. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:jane@example.com">jane@example.com</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

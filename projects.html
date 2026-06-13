@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects — Jane Doe Portfolio</title>
+  <meta name="description" content="Browse a selection of web development projects by Jane Doe, including dashboards, landing pages, and accessibility-focused builds.">
+  <link rel="canonical" href="https://example.com/projects.html">
+
+  <meta property="og:title" content="Projects — Jane Doe Portfolio">
+  <meta property="og:description" content="A selection of web development projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/projects.html">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Jane Doe</a></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>My Projects</h1>
+    <p>A selection of recent work. Each project includes a brief description and links to code or a live demo.</p>
+
+    <section aria-label="Project list">
+      <ul class="project-list">
+        <li class="project-card">
+          <article id="project1" aria-labelledby="project1-heading">
+            <h2 id="project1-heading">Project One</h2>
+            <img
+              src="https://placehold.co/400x250"
+              alt="Screenshot of Project One dashboard showing a chart and navigation sidebar"
+              width="400" height="250" loading="lazy">
+            <p>
+              A web app dashboard built with HTML, CSS, and JavaScript.
+              Focused on accessible data visualization and keyboard navigation.
+            </p>
+            <p>
+              <a href="https://github.com/example/project-one">View source code on GitHub</a>
+              &nbsp;|&nbsp;
+              <a href="https://example.com/project-one">View live demo</a>
+            </p>
+          </article>
+        </li>
+
+        <li class="project-card">
+          <article id="project2" aria-labelledby="project2-heading">
+            <h2 id="project2-heading">Project Two</h2>
+            <img
+              src="https://placehold.co/400x250"
+              alt="Screenshot of Project Two landing page with hero section"
+              width="400" height="250" loading="lazy">
+            <p>
+              A responsive marketing landing page optimized for SEO and
+              fast load times, scoring 95+ on Lighthouse performance.
+            </p>
+            <p>
+              <a href="https://github.com/example/project-two">View source code on GitHub</a>
+              &nbsp;|&nbsp;
+              <a href="https://example.com/project-two">View live demo</a>
+            </p>
+          </article>
+        </li>
+
+        <li class="project-card">
+          <article id="project3" aria-labelledby="project3-heading">
+            <h2 id="project3-heading">Project Three</h2>
+            <img
+              src="https://placehold.co/400x250"
+              alt="Screenshot of Project Three mobile app interface showing a form"
+              width="400" height="250" loading="lazy">
+            <p>
+              A multi-step accessible form with live validation feedback
+              and ARIA live regions for screen reader users.
+            </p>
+            <p>
+              <a href="https://github.com/example/project-three">View source code on GitHub</a>
+              &nbsp;|&nbsp;
+              <a href="https://example.com/project-three">View live demo</a>
+            </p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jane Doe. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:jane@example.com">jane@example.com</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
